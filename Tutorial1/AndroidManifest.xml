@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tutorial1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.example.tutorial1" >
+    </instrumentation>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.tutorial1.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.tutorial1.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.tutorial1.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.TextPlay"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.Email"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.Camera"
+            android:label="Camera Application"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.DataToo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.GFX"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.GFXSurface"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.SoundStuff"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.OpenedClass"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.Slider"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.Tabs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.Flipper"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.example.tutorial1.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.Prefs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.tutorial1.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.SimpleBrowser"
+            android:label="@string/title_activity_simple_browser" >
+        </activity>
+        <activity
+            android:name="com.example.tutorial1.SharedPrefs"
+            android:label="@string/title_activity_shared_prefs" >
+        </activity>
+    </application>
+
+</manifest>
